@@ -1,0 +1,306 @@
+[
+  {
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "起点中文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qidian.com",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "起点月票::/rank/yuepiao?page={{page}}\n原创风云::/rank/fengyun?style=1&page={{page}}\n热销榜单::/rank/hotsales?style=1&page={{page}}\n阅读指数::/rank/readIndex?style=1&page={{page}}\n粉丝榜单::/rank/newFans?style=1&page={{page}}\n推荐票榜::/rank/recom?style=1&page={{page}}\n收藏榜单::/rank/collect?style=1&page={{page}}\n会员更新::/rank/vipup?style=1&page={{page}}\n会员收藏::/rank/vipcollect?style=1&page={{page}}\n会员打赏::/rank/vipreward?style=1&page={{page}}\n签约新书::/rank/signnewbook?style=1&page={{page}}\n公众新书::/rank/pubnewbook?style=1&page={{page}}\n新人签约::/rank/newsign?style=1&{{page}}\n新人作者::/rank/newauthor?style=1&{{page}}\n玄幻榜单::/rank/yuepiao?chn=21&page={{page}}\n奇幻榜单::/rank/yuepiao?chn=1&page={{page}}\n武侠榜单::/rank/yuepiao?chn=2&page={{page}}\n仙侠榜单::/rank/yuepiao?chn=22&page={{page}}\n都市榜单::/rank/yuepiao?chn=4&page={{page}}\n现实榜单::/rank/yuepiao?chn=15&page={{page}}\n军事榜单::/rank/yuepiao?chn=6&page={{page}}\n历史榜单::/rank/yuepiao?chn=5&page={{page}}\n游戏榜单::/rank/yuepiao?chn=7&page={{page}}\n体育榜单::/rank/yuepiao?chn=8&page={{page}}\n科幻榜单::/rank/yuepiao?chn=9&page={{page}}\n悬疑榜单::/rank/yuepiao?chn=10&page={{page}}\n轻小说榜::/rank/yuepiao?chn=12&page={{page}}",
+    "header": "",
+    "lastUpdateTime": 0,
+    "ruleBookInfo": {
+      "author": "class.writer@text",
+      "coverUrl": "id.bookImg@tag.img@src",
+      "intro": "class.book-intro@text",
+      "kind": "class.book-info@class.tag@tag.a@text",
+      "lastChapter": "class.update@class.cf@text",
+      "name": "class.book-info@tag.h1@tag.em@text",
+      "tocUrl": "<js>\nvar id = baseUrl.match(/info\\/(\\d+)/)[1];\njava.put('id', id);\n'https://druid.if.qidian.com/argus/api/v1/chapterlist/chapterlist?bookId='+id;\n</js>"
+    },
+    "ruleContent": {
+      "content": "##\"content\":\"([^\"]*)\",\"authorWords##$1###",
+      "imageStyle": "0"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.author@tag.a.0@text",
+      "bookList": "class.book-img-text@tag.ul@tag.li",
+      "bookUrl": "text.书籍详情@href",
+      "coverUrl": "class.book-img-box@tag.a@tag.img@src",
+      "intro": "class.intro@text",
+      "kind": "class.author@tag.a.1@text",
+      "lastChapter": "class.update@text##最新更新",
+      "name": "tag.h4@tag.a@text",
+      "wordCount": "text.总字数@text##总字数"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nvar json=JSON.parse(result).Data;\nvar bid=json.BookId;\nvar base=\"https://m.qidian.com/book/\"+bid+\"/\";\n\njson.Chapters.slice(1).map(ch=>({\ntitle:ch.N,\nlink:base+ch.C,\nvip:ch.V,\ntime:java.timeFormat(ch.T)\n}))\n</js>",
+      "chapterName": "title",
+      "chapterUrl": "link",
+      "isVip": "vip",
+      "updateTime": "time"
+    },
+    "searchUrl": "/search?kw={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "error:unexpected end of stream on https://www.9txs.com/...\n",
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "九桃小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.9txs.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1614751120308,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "$4",
+      "coverUrl": "$2",
+      "init": ":og:description\"(?:[^\"]*\")([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){8}([^\"]*)(?:[^\"]*\"){8}([^\"]*)(?:[^\"]*\"){4}([^\"]*)",
+      "intro": "$1",
+      "kind": "$3",
+      "lastChapter": "$9$8",
+      "name": "$5",
+      "tocUrl": "$6",
+      "wordCount": "$7"
+    },
+    "ruleContent": {
+      "content": "id.content@tag.p!0@html",
+      "imageStyle": "0",
+      "nextContentUrl": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "$5",
+      "bookList": ":img src=\"([^\"]*)\"(?:[^\"]*\")([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)(?:[^>]*>){3}([^>]*)<(?:[^>]*>){3}([^<]*)(?:[^>]*>){4}([^>]*)<(?:[^>]*>){3}([^>]*)<(?:[^>]*>){2}([^>]*)<(?:[^>]*>){2}(?:[^<]*)：([^<]*)",
+      "bookUrl": "$3",
+      "coverUrl": "$1",
+      "intro": "$8",
+      "kind": "$6",
+      "lastChapter": "$9",
+      "name": "$2",
+      "wordCount": "$7·$4"
+    },
+    "ruleToc": {
+      "chapterList": "class.read@tag.dl!0@tag.dd@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "https://so.9txs.com/www,{\n     \"method\": \"POST\",\n     \"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "老幺小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.laoyao.org",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledExplore": true,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36 Edg/81.0.416.64\"\n}",
+    "lastUpdateTime": 1614751183095,
+    "ruleBookInfo": {
+      "author": "$4",
+      "coverUrl": "$2",
+      "init": ":og:description\"(?:[^\"]*\"){1}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){8}([^\"]*)(?:[^\"]*\"){4}([^\"]*)(?:[^\"]*\"){4}([^\"]*)",
+      "intro": "$1",
+      "kind": "$3",
+      "lastChapter": "$9$8",
+      "name": "$5",
+      "tocUrl": "$6",
+      "wordCount": "$7"
+    },
+    "ruleContent": {
+      "content": "id.txt@tag.p!-1@html",
+      "imageStyle": "0"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$3",
+      "bookList": ":original=\"([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)(?:[^>]*>){12}([^<]*)(?:[^>]*>){4}([^<]*)(?:[^：]*)：([^<]*)(?:[^：]*：)([^<]*)(?:[^>]*>){6}([^<]*)(?:[^>]*>){3}([^<]*)(?:[^：]*：)([^<]*)(?:[^\"]*\")([^\"]*)",
+      "bookUrl": "$10",
+      "coverUrl": "$1",
+      "intro": "$8",
+      "kind": "$4",
+      "lastChapter": "$7$9",
+      "name": "$2",
+      "wordCount": "$6$5"
+    },
+    "ruleToc": {
+      "chapterList": ":chapters\"><a href=\"([^\"]*)\"(?:[^>]*>)([^<]*)(?:[^：]*：)([^<]*)",
+      "chapterName": "$2$3",
+      "chapterUrl": "$1"
+    },
+    "searchUrl": "/search.php?key={{key}}&page={{page}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "error:Content cannot be null\nerror:Content cannot be null\nnull",
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "采墨阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.caimoge.com",
+    "bookUrlPattern": "",
+    "customOrder": 4,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1614755584115,
+    "loginUrl": "",
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "id.content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$4",
+      "bookList": ":<dl>[^\"]*\"([^\"]*)\"(?:[^\"]*\"){3}([^\"]*\")(?:[^>]*>){6}([^<]*)(?:[^>]*>){8}([^<]*)(?:[^>]*>){5}([^<]*)(?:[^>]*>){2}([^<]*)(?:[^>]*>){3}([^<]*)(?:[^>]*>){3}([^<]*)(?:[^>]*>){2}([^<]*)",
+      "bookUrl": "$1",
+      "coverUrl": "$2",
+      "intro": "$7",
+      "kind": "$5",
+      "lastChapter": "$8$9",
+      "name": "$3",
+      "wordCount": "$6万字"
+    },
+    "ruleToc": {
+      "chapterList": "id.readerlist@tag.ul@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "妙笔阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.imiaobige.com",
+    "bookUrlPattern": "",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1614751258194,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "$4",
+      "coverUrl": "$2",
+      "init": ":og:description\"(?:[^\"]*\"){1}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)(?:[^\"]*\"){4}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){7}([^\"]*)\"(?:[^\"]*\"){7}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^:]*:){6}(?:[^>]*>){23}([^>]*)<[^>]*>([^>]*)<",
+      "intro": "$1",
+      "kind": "$3",
+      "lastChapter": "$9$8",
+      "name": "$5",
+      "tocUrl": "$6",
+      "wordCount": "$10$11$7"
+    },
+    "ruleContent": {
+      "content": "id.content@tag.p!0@html",
+      "nextContentUrl": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "$5",
+      "bookList": ":<img src=\"([^\"]*)\"(?:[^\"]\"*){5}([^\"]*)\"(?:[^\"]*\"){5}([^\"]*)(?:[^\"]*\"){7}>([^>]*)<(?:[^>]*>){2}([^>]*)<(?:[^>]*>){2}([^>]*)<(?:[^>]*>)([^>]*)<(?:[^>]*>)([^>]*)<(?:[^>]*>){3}([^>]*)<(?:[^>]*>){3}([^>]*)<(?:[^>]*>){3}([^>]*)<",
+      "bookUrl": "$3",
+      "coverUrl": "$1",
+      "intro": "$9",
+      "kind": "$2",
+      "lastChapter": "$10$11",
+      "name": "$2",
+      "wordCount": "$6·$7$8"
+    },
+    "ruleToc": {
+      "chapterList": "id.readerlists@tag.ul!0@tag.li@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "/search.html,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🔥🔥🔥",
+    "bookSourceName": "追书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.mangg.net",
+    "customOrder": 8,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1614755603118,
+    "ruleBookInfo": {
+      "author": "$4",
+      "coverUrl": "$2",
+      "init": "::description\"(?:[^\"]*\"){1}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){7}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"(?:[^\"]*\"){3}([^\"]*)\"",
+      "intro": "$1",
+      "kind": "$3",
+      "lastChapter": "$9$8",
+      "name": "$5",
+      "tocUrl": "$6",
+      "wordCount": "$7"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$5",
+      "bookList": ":result-game-item\"(?:[^<]*<){2}[^>]*href=\"([^\"]*)\"(?:[^<]*<){1}img src=\"([^\"]*)\"(?:[^<]*<){6}span>([^<]*)(?:[^<]*<){4}[^>]*desc\">([^<]*)(?:[^>]*>){6}([^>]*)<(?:[^>]*>){6}([^>]*)<(?:[^>]*>){6}([^>]*)<(?:[^>]*>){6}([^>]*)<",
+      "bookUrl": "$1",
+      "coverUrl": "$2",
+      "intro": "$4",
+      "kind": "$6",
+      "lastChapter": "$8$7",
+      "name": "$3",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ":<dd><a href=\"([^\"]*)\"[^>]*>([^>]*)<",
+      "chapterName": "$2",
+      "chapterUrl": "$1"
+    },
+    "searchUrl": "/search.php?q={{key}}&p={{page}}",
+    "weight": 0
+  }
+]
